@@ -1,0 +1,3 @@
+export SONAR_PROJECT_KEY=cj-poc-nonarqube
+export SONAR_HOST_URL=http://localhost:9000
+export SONAR_AUTH_TOKEN=a3562d66355fbd57bc2d5103a32637fd9de24d0c
