@@ -1,0 +1,15 @@
+FROM gradle:7.6-jdk17-focal
+
+USER root
+RUN mkdir /work
+WORKDIR /work
+
+COPY . /work
+RUN chmod +x ./ci/*.sh
+RUN chmod +x ./gradlew
+
+# RUN ./work/
+
+RUN ./ci/sonar-scan.sh
+
+CMD ["sleep", "infinity"]
